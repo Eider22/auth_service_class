@@ -30,12 +30,13 @@ jobs:
         run: |
           pytest
 
-  deloy:
+  deploy:
+      needs: [test]
       runs-on: ubuntu-latest
       steps:
         - name: Deploy to production
           uses: johnbeynon/render-deploy-action@v0.0.8
           with:
-            service-id: ${{ srv-cot2c6icn0vc73etied0 }}
-            api-key: ${{ rnd_Lv1rpLu04CvzBGTTPBQfl8zAwAgk }}
+            service-id: srv-cot2c6icn0vc73etied0
+            api-key: rnd_Lv1rpLu04CvzBGTTPBQfl8zAwAgk
             wait-for-success: true

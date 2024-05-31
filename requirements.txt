@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+
+pyjwt
+
+jinja2
+
+python-multipart
+pytest

@@ -38,5 +38,4 @@ jobs:
           uses: johnbeynon/render-deploy-action@v0.0.8
           with:
             service-id: srv-cot2c6icn0vc73etied0
-            api-key: rnd_Lv1rpLu04CvzBGTTPBQfl8zAwAgk
-            wait-for-success: true
+            api-key: rnd_5YLBG99un7TyuxF1s8wJ0y6iMMaC
